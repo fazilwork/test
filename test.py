@@ -1,3 +1,4 @@
+import random;
 #            ПЕРВЫЙ+
 # a = int(input("ведите число: "))
 # if a / 2 == 0:
@@ -209,14 +210,78 @@
 # print(b)
 
 
-#                     не доделал
-# my_di = {"d",2,3,4,623,200,34,"wsfd",324}
+#                     ДВАЦАТЬ ДВА
+# my_di = {
+#     "a" : 550,
+#     "b" : 600,
+#     "c" : 700,
+#     "s" : 809,
+#     "f" : 909,
+#     "a" : 1000,
+# }
+# g = sorted(my_di, reverse=True)[:3]
 
-# for i in my_di:
-#     d = 0
-#     if i >= d:
-#         print("dfgd")
-#     else :
+# print(g)
+
+#                  ДВАЦАТЬ ТРИ
+# a = input("веди слова")
+# b = input()
+# print(a.count(b))
+
+
+#                       ДВАЦАТЬ ЧЕТЫРИ
+# a = random.randrange(0,100)
+# b = 0
+# while b != a:
+#     b = int(input("угадай число"))
+#     if b < a:
+#         print("веди число поболше!!")
+#     elif b > a:
+#         print("веди число поменше")
+#     elif b == a:
+#         print("ебать ты хорош")    
+
+
+#                     ДВАЦАТЬ ПЯТЬ
+
+# a = int(input("веди число:  "))
+# b = int(input("веди второе число:  "))
+# d = 0
+# f = input(" что хочеш сделать?: ")
+
+# if f == "умнож":
+#     d  = a * b 
+#     print(f"ответ: {d}")
+# elif f == "пльс":
+#     d = a + b
+#     print(f"ответ: {d}")
+# elif f == "мину":
+#     d = a - b
+#     print(f"ответ: {d}")
+# elif f == "деления":
+#     d = a / b
+#     print(f"ответ: {d}")
+# elif f == "степ":
+#     d = a**b
+#     print(f"ответ: {d}")         
+                     
+#                       ДВАЧАТЬ ШЕСТЬ
+# a = int(input("веди число щя проверим на четность: "))
+
+# def chek_value(a):
+#     if a % 2 == 0:
+#         print("число четная ")
+#     if a % 2 != 0:
+#         print("число не четная")
+#     else: 
 #         pass
+# chek_value(a)               
 
-#     d = i
+
+
+# a = [12,121,2342,345,465,6,362,54,62,724,72,]
+
+# def sum_all(a):
+#     d = sum(a)
+#     print(d)
+# sum_all(a)    
