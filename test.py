@@ -290,7 +290,9 @@ import random;
 
 file1 = "result.txt"
 
-
+def math(a,b,d):
+    with open(file1, "w") as file:
+        file.write(f"this first {a} second {b}  result: {d}")
 
 
 a = int(input("веди число:  "))
@@ -298,30 +300,30 @@ b = int(input("веди второе число:  "))
 d = 0
 f = input(" что хочеш сделать?: ")
 
-if f == "умнож":
+if f == "*":
     d  = a * b 
-    with open(file1, "w") as file:
-        file.write(f"this first {a} second {b}  result: {d}")
-
-elif f == "пльс":
-    d = a + b   
-    with open(file1, "w") as file:
-        file.write(f"this first {a} second {b}  result: {d}")
-elif f == "мину":
-    d = a - b
+    math(a,b,d)
     
-    with open(file1, "w") as file:
-        file.write(f"this first {a} second {b}  result: {d}")
+
+elif f == "+":
+    d = a + b   
+    math(a,b,d)
+    
+elif f == "-":
+    d = a - b
+    math(a,b,d)
+    
+    
 elif f == "деления":
     d = a / b
+    math(a,b,d)
     
-    with open(file1, "w") as file:
-        file.write(f"this first {a} second {b}  result: {d}")
+    
 elif f == "степ":
     d = a**b
+    math(a,b,d)
     
-    with open(file1, "w") as file:
-        file.write(f"this first {a} second {b}  result: {d}") 
+   
 
 
 
