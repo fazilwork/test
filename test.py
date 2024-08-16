@@ -288,42 +288,40 @@ import random;
 
 
 
+
+
 file1 = "result.txt"
 
 def math(a,b,d):
     with open(file1, "w") as file:
         file.write(f"this first {a} second {b}  result: {d}")
 
+try:
+    a = int(input("веди число:  "))
+    b = int(input("веди второе число:  "))
+    d = 0
+    f = input(" что хочеш сделать?: ")
 
-a = int(input("веди число:  "))
-b = int(input("веди второе число:  "))
-d = 0
-f = input(" что хочеш сделать?: ")
-
-if f == "*":
-    d  = a * b 
-    math(a,b,d)
+    if f == "*":
+        d  = a * b 
+        math(a,b,d)
+    elif f == "+":
+        d = a + b   
+        math(a,b,d)
     
-
-elif f == "+":
-    d = a + b   
-    math(a,b,d)
-    
-elif f == "-":
-    d = a - b
-    math(a,b,d)
-    
-    
-elif f == "деления":
-    d = a / b
-    math(a,b,d)
-    
-    
-elif f == "степ":
-    d = a**b
-    math(a,b,d)
-    
-   
+    elif f == "-":
+        d = a - b
+        math(a,b,d)
+    elif f == "":
+        d = a / b
+        math(a,b,d) 
+    elif f == "степ":
+        d = a**b
+        math(a,b,d)
+    else:
+        print("говно")    
+except ValueError:
+    print("все говно")
 
 
 
