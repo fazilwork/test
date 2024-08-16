@@ -297,8 +297,8 @@ def math(a,b,d):
         file.write(f"this first {a} second {b}  result: {d}")
 
 try:
-    a = int(input("веди число:  "))
-    b = int(input("веди второе число:  "))
+    a = float(input("веди число:  "))
+    b = float(input("веди второе число:  "))
     d = 0
     f = input(" что хочеш сделать?: ")
 
