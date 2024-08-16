@@ -315,7 +315,7 @@ try:
     elif f == "":
         d = a / b
         math(a,b,d) 
-    elif f == "степ":
+    elif f == "**":
         d = a**b
         math(a,b,d)
     else:
