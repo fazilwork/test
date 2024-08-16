@@ -285,3 +285,43 @@ import random;
 #     d = sum(a)
 #     print(d)
 # sum_all(a)    
+
+
+
+file1 = "result.txt"
+
+
+
+
+a = int(input("веди число:  "))
+b = int(input("веди второе число:  "))
+d = 0
+f = input(" что хочеш сделать?: ")
+
+if f == "умнож":
+    d  = a * b 
+    with open(file1, "w") as file:
+        file.write(f"this first {a} second {b}  result: {d}")
+
+elif f == "пльс":
+    d = a + b   
+    with open(file1, "w") as file:
+        file.write(f"this first {a} second {b}  result: {d}")
+elif f == "мину":
+    d = a - b
+    
+    with open(file1, "w") as file:
+        file.write(f"this first {a} second {b}  result: {d}")
+elif f == "деления":
+    d = a / b
+    
+    with open(file1, "w") as file:
+        file.write(f"this first {a} second {b}  result: {d}")
+elif f == "степ":
+    d = a**b
+    
+    with open(file1, "w") as file:
+        file.write(f"this first {a} second {b}  result: {d}") 
+
+
+
